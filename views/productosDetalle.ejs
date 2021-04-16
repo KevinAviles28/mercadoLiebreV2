@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head') %>
+<body>
+    <%- include('partials/header') %> 
+     <div class="container">
+        <section class="detail">
+            <div class="row">
+                
+                <div class="tituloDetalle col-12">
+                    <h2>Detalle de Producto:<%=producto.name %> </h2>
+                </div>
+                <div class="col-12">
+                    <div class="container-fluid text-left">
+                        <div class="row box">
+                            <div class="col-12 col-lg-8 imgContainer ">
+                                <figure class="text-center">
+                                    <img class="imagenDetail" src="/images/products/<%=producto.image%>" alt="">
+                                </figure>
+                                <p><%=producto.description%>  </p>
+                            </div>
+                            <div class="col-12 col-lg-4 data-product">
+                                <h3 class="name"><%=producto.name%> </h3>
+                                <% if (producto.discount!=0) { %>
+                                    <span> <s>$<%=producto.price%></s>  / <%=producto.discount%> % OFF</span>
+                                <% } %>
+                                <h2 class="price">$<%=precioReal(producto)%> </h2>
+                                <p class="icons"><i class="fas fa-credit-card mr-3 my-4"></i>Paga en 12 cuotas sin interes</p>
+                                <p class="ico ns"><i class="fas fa-store mr-3 my-4"></i>Retiro gratis en locales del vendedor</p>
+                                <button class="btn-primary">Comprar ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div> 
+    <%- include('partials/footer') %>
+    <%- include('partials/scripts') %>  
+</body>
+</html>

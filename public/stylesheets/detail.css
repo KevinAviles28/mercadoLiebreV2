@@ -1,0 +1,52 @@
+.tituloDetalle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.tituloDetalle h2{
+    font-size: 25px;
+    color: rgb(155, 154, 154);
+}
+.imgContainer{
+    padding-right: 0;
+}
+.imgContainer .imagenDetail{
+    height: 65% !important;
+}
+.imgContainer p{
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 0;
+}
+.data-product{
+    background-color: white;
+    border-left: 1px solid rgb(196, 194, 194);
+    
+}
+.data-product h3.name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.data-product span{
+    font-size: 15px;
+    color:rgb(33, 185, 33);
+}
+.data-product h2.price{
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.data-product i{
+    color:rgb(33, 185, 33);
+}
+.data-product p{
+    font-size: 15px;
+}
+.data-product button{
+    margin-top: 55px;
+    font-size: 18px;
+    background-color: rgb(51, 51, 250);
+    width:95%;
+    padding: 10px;
+    border-radius: 10px;
+}
